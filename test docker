@@ -1,0 +1,13 @@
+docker login
+docker ps
+
+
+
+
+FROM node:14//ใช้node ver 14
+WORKDIR /usr/src/app
+COPY package*json app.js/
+RUN npm install
+EXPOSE 3000 //port 3000
+
+docker build -t
